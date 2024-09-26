@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Web Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #333; color: white; padding: 10px; text-align: center; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; }
+        main { padding: 20px; }
+        footer { position: fixed; width: 100%; bottom: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to my website</h1>
+
+        <h2>Submit Your Details</h2>
+        <form method="POST" action="/submit">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Submit</button>
+        </form>   
+    </main>
+    
+    <footer>
+        <p>Contact us at: contact@mysite.com</p>
+    </footer>
+</body>
+</html>
